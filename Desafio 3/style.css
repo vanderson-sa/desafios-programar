@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-custom {
+    background-color: #F8F8FF;
+    padding: 60px 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 560px;
+}
+
+.header-custom .title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #121214;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header-custom .highlight {
+    color: #846AFF;
+}
+
+.header-custom .lead {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #121214;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.header-custom .btn-custom {
+    background-color: #846AFF;
+    border-color: #846AFF;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    width: auto;
+    height: auto;
+    padding: 14px 32px;
+    border-radius: 4px;
+}
+
+.header-custom .btn-custom:hover {
+    background-color: #6b54d3;
+    border-color: #6b54d3;
+}
+
+.img-fluid {
+    padding: 10px;
+}
+
+.footer {
+    background-color: #F8F8FF;
+    padding: 40px 0;
+}
+
+.footer .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer .form-container input::placeholder,
+.footer .form-container textarea::placeholder {
+    color: #6c757d;
+}
+
+.footer .form-container .btn-custom {
+    background-color: #846AFF;
+    border-color: #846AFF;
+    color: white;
+    width: 100%;
+}
+
+.footer .form-container .btn-custom:hover {
+    background-color: #6b54d3;
+    border-color: #6b54d3;
+}
+
+.card-body .card-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #121214;
+}
+
+.sub-title {
+    font-weight: 600;
+    font-size: 32px;
+    color: #121214;
+    padding-bottom: 48px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-custom {
+    display: flex;
+    max-width: 384px;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid #EEEEFF;
+}
+
+.card-img-top {
+    height: 175px;
+}
+
+
+
+.card-custom .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row > .col-md-6 {
+        max-width: 100%;
+    }
+    
+}
+

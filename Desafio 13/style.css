@@ -1,0 +1,268 @@
+:root {
+    --font-preahvier: 'Preahvihear', sans-serif;
+
+    --font-inter: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0B0B0B;
+}
+
+.fab {
+    color: #BF91F9;
+}
+
+.navbar {
+    border-bottom: 2px solid #151515;
+    padding: 20px;
+}
+
+.navbar-brand{
+    color: #BF91F9 !important;
+    font-family: var(--font-preahvier);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.nav-link{
+    color: #FFFFFF !important;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.topo {
+    padding: 6rem 0;
+}
+
+.hello, .title {
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.name {
+    color: #BF91F9;
+    font-family: var(--font-preahvier);
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.btn-custom {
+    border: none;
+    background-color: #A67CE5; 
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-weight: 500; 
+    font-size: 16px; 
+    color: #0B0B0B;
+    padding: 10px 40px;
+}
+
+.about-section {
+    background-color: #151515; 
+    padding: 60px;
+}
+
+.about-title, .projects-title, .experience-title {
+    color: #BF91F9;
+    font-family: var(--font-preahvier);
+    font-weight: 400;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.location {
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-section {
+    color: #FFFFFF;
+    padding: 60px;
+}
+
+.experience-item {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 15px;
+    border-left: 2px solid #151515;
+}
+
+.experience-item.active {
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 18px;
+    border-left: 2px solid #BF91F9;
+    background-color: #0E0E0E;
+}
+
+.experience-content {
+    display: none;
+}
+
+.experience-content.active {
+    display: block;
+}
+
+.experience-title {
+    color: #BF91F9;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.experience-header p {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.experience-subtitle {
+    color: #BF91F9;
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.projects-section {
+    background-color: #151515;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+.project-card {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-left: 5px solid #BF91F9;
+    border-radius: 4px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-details {
+    position: relative;
+    background: none;
+    padding: 20px;
+    z-index: 1;
+}
+
+.project-name {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.project-technologies {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #BF91F9;
+    margin-bottom: 20px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-access, .btn-repository {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px 10px 40px;
+    border-radius: 4px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.btn-access {
+    background-color: #BF91F9;
+    border: none;
+    color: #0B0B0B;
+}
+
+.btn-repository {
+    border: 2px solid #BF91F9;
+    color: #BF91F9;
+    background-color: #151515;
+}
+
+.btn-repository:hover {
+    background-color: #BF91F9;
+    border: none;
+    padding: 10px 40px 10px 40px;
+    color: #0B0B0B;
+}
+
+.btn-access:hover {
+    border: 2px solid #BF91F9;
+    padding: 10px 40px 10px 40px;
+    color: #BF91F9;
+    background-color: #151515;
+}
+
+.custom-spacing {
+    margin-left: 1.5rem;
+}
+
+.footer {
+    color: #FFFFFF;
+    font-family: var(--font-inter);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.right {
+    color: #BF91F9;
+}
+
+@media (max-width: 1024px) {
+    .custom-spacing {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+}

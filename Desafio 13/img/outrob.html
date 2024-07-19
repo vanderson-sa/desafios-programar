@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Preahvihear&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #0B0B0B;
+        }
+
+        .home {
+            position: relative;
+            width: 100%;
+            height: 700px;
+        }
+
+        .gradient {
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            left: 1120px;
+            top: 150px;
+            background: rgba(191, 145, 249, 0.4);
+            filter: blur(200px);
+        }
+
+        .me {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: 1070px;
+            top: 150px;
+            background: url('10.png');
+        }
+
+        .btn-custom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 40px;
+            gap: 10px;
+            position: absolute;
+            width: 145px;
+            height: 39px;
+            left: 352px;
+            top: 424px;
+            background: #BF91F9;
+            border-radius: 4px;
+            color: #0B0B0B;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        .title {
+            position: absolute;
+            width: 449px;
+            height: 29px;
+            left: 352px;
+            top: 347px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: justify;
+            color: #FFFFFF;
+        }
+
+        .hello {
+            position: absolute;
+            width: 128px;
+            height: 29px;
+            left: 352px;
+            top: 231px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+        }
+
+        .line {
+            position: absolute;
+            width: 1216px;
+            height: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 91px;
+            border: 2px solid #151515;
+        }
+
+        .name {
+            position: absolute;
+            width: 212px;
+            height: 87px;
+            left: 352px;
+            top: 260px;
+            font-family: 'Preahvihear', sans-serif;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 87px;
+            display: flex;
+            align-items: center;
+            color: #BF91F9;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            width: 1216px;
+            height: 43px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 24px;
+        }
+
+        .menu-item {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+
+        .menu-item.name {
+            font-family: 'Preahvihear', sans-serif;
+            font-size: 24px;
+            line-height: 43px;
+            color: #BF91F9;
+        }
+
+        .passionate {
+            position: absolute;
+            width: 213px;
+            height: 36px;
+            left: 675.22px;
+            top: 197.96px;
+            font-family: 'Preahvihear', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #BF91F9;
+        }
+
+        .arrow {
+            position: absolute;
+            width: 90px;
+            height: 80px;
+            left: 678.77px;
+            top: 230.48px;
+            transform: matrix(-0.87, -0.5, -0.5, 0.87, 0, 0);
+        }
+
+        .vector {
+            position: absolute;
+            width: 76.75px;
+            height: 46.78px;
+            left: 580.71px;
+            top: 220.33px;
+            background: #FFFFFF;
+            transform: matrix(1, -0.03, 0.03, 1, 0, 0);
+        }
+        .custom-card {
+      background: #0B0B0B;
+      border-radius: 4px;
+      padding: 20px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .project-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+      margin-top: 20px;
+    }
+    .project-description {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #FFFFFF;
+      margin-top: 10px;
+    }
+    .project-tech {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #BF91F9;
+      margin-top: 10px;
+    }
+    .vertical-bar {
+      background: #BF91F9;
+      width: 4px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 4px 0 0 4px;
+    }
+    .btn-custom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 40px;
+      gap: 10px;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+    .btn-project {
+      background: #BF91F9;
+      color: #0B0B0B;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .btn-repo {
+      background: #0E0E0E;
+      border: 2px solid #BF91F9;
+      color: #BF91F9;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+    }
+    .section-title {
+      font-family: 'Preahvihear', sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 58px;
+      color: #BF91F9;
+      margin-bottom: 20px;
+    }
+    .project-image {
+      font-family: 'Preahvihear', sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 43px;
+      color: #BF91F9;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="home">
+        
+        <div class="me"></div>
+        <div class="btn-custom">LinkedIn</div>
+        <div class="title">Desenvolvedor Frontend & UI Designer.</div>
+        <div class="hello">Olá, eu sou</div>
+        <div class="line"></div>
+        <div class="name">Iuri Silva</div>
+        <div class="vector"></div>
+        <div class="passionate">Apaixonado por café</div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-item name">Iuri Silva</div>
+        <div class="menu-item">Início</div>
+        <div class="menu-item">Sobre mim</div>
+        <div class="menu-item">Experiências</div>
+        <div class="menu-item">Projetos</div>
+    </div>
+    
+    <div class="arrow"></div>
+    <div class="gradient"></div>
+    <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="section-title">Projetos</h1>
+          </div>
+    
+          <div class="col-md-6">
+            <div class="custom-card">
+              <div class="vertical-bar"></div>
+              <div class="project-image">Imagem projeto</div>
+              <div class="project-title">Nome do projeto</div>
+              <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</div>
+              <div class="project-tech">Tecnologias usadas no projeto</div>
+              <div class="btn-custom btn-project">Acessar o projeto</div>
+              <div class="btn-custom btn-repo">Acessar repositório</div>
+            </div>
+          </div>
+    
+          <div class="col-md-6">
+            <div class="custom-card">
+              <div class="vertical-bar"></div>
+              <div class="project-image">Imagem projeto</div>
+              <div class="project-title">Nome do projeto</div>
+              <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</div>
+              <div class="project-tech">Tecnologias usadas no projeto</div>
+              <div class="btn-custom btn-project">Acessar o projeto</div>
+              <div class="btn-custom btn-repo">Acessar repositório</div>
+            </div>
+          </div>
+    
+          <div class="col-md-6">
+            <div class="custom-card">
+              <div class="vertical-bar"></div>
+              <div class="project-image">Imagem projeto</div>
+              <div class="project-title">Nome do projeto</div>
+              <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</div>
+              <div class="project-tech">Tecnologias usadas no projeto</div>
+              <div class="btn-custom btn-project">Acessar o projeto</div>
+              <div class="btn-custom btn-repo">Acessar repositório</div>
+            </div>
+          </div>
+    
+          <div class="col-md-6">
+            <div class="custom-card">
+              <div class="vertical-bar"></div>
+              <div class="project-image">Imagem projeto</div>
+              <div class="project-title">Nome do projeto</div>
+              <div class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit interdum odio eu varius.</div>
+              <div class="project-tech">Tecnologias usadas no projeto</div>
+              <div class="btn-custom btn-project">Acessar o projeto</div>
+              <div class="btn-custom btn-repo">Acessar repositório</div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    background: #0E0E0E;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+}
+
+#home .text-white {
+    color: #FFFFFF;
+}
+
+#sobre .text-white {
+    color: #FFFFFF;
+}
+
+#experiencias .text-white {
+    color: #FFFFFF;
+}
+
+#projetos .text-white {
+    color: #FFFFFF;
+}
+
+footer .text-white {
+    color: #FFFFFF;
+}
