@@ -48,7 +48,7 @@
             </div>
             <input type="text" class="form-control search-box" id="searchBox" placeholder="Buscar...">
     
-            <div class="row mt-4">
+            <div class="row mt-4" id="cardContainer">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card card-custom">
                         <img src="./image/image-1.png" class="card-img-top" alt="...">
@@ -76,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card card-custom">
                         <img src="./image/image-4.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -84,8 +84,8 @@
                             <p class="card-text">Dominar os comandos GIT é uma habilidade que se conquista com...</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card card-custom">
                         <img src="./image/image-5.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -93,8 +93,8 @@
                             <p class="card-text">Git e GibHub são dois softwares de controle de versão essenciais para...</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card card-custom">
                         <img src="./image/image-6.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -102,7 +102,13 @@
                             <p class="card-text">O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
+            </div>
+            <div class="text-center mt-4">
+                <button id="loadMore" class="btn btn-custom"><i class="fas fa-plus"></i> Mais Artigos</button>
+                <ea-load-more label-text="Carregar mais" quantity="9" slot="load-more" title="" theme="light" tabindex="0">
+                    Carregar mais
+                </ea-load-more>
             </div>
         </div>
     </div>

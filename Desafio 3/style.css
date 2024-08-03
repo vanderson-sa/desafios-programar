@@ -58,6 +58,13 @@ body {
     padding: 10px;
 }
 
+.btn-custom {
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+}
+
+
 .footer {
     background-color: #F8F8FF;
     padding: 40px 0;
@@ -135,4 +142,3 @@ body {
     }
     
 }
-
