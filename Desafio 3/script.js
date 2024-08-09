@@ -20,6 +20,11 @@ const articles = [
         img: './image/image-6.png',
         title: 'GitHub Copilot ganha integração com GPT-4 e interface conversacional',
         text: 'O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...'
+    },
+    {
+        img: './image/image-6.png',
+        title: 'GitHub Copilot ganha integração com GPT-4 e interface conversacional',
+        text: 'Teste...'
     }
 ];
 
@@ -46,5 +51,23 @@ function addCards() {
     });
 }
 
-// Acionar o a criacao de novas divs
+// Acionar a criacao de novas divs
 document.getElementById('loadMore').addEventListener('click', addCards);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const searchBox = document.getElementById("searchBox");
+    const articles = document.querySelectorAll(".article");
+
+    searchBox.addEventListener("input", function() {
+        const searchTerm = searchBox.value.toLowerCase();
+        articles.forEach(article => {
+            const title = article.dataset.title.toLowerCase();
+            if (title.includes(searchTerm)) {
+                article.style.display = "block";
+            } else {
+                article.style.display = "none";
+            }
+        });
+    });
+});
+
